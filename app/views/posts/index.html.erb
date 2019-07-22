@@ -1,0 +1,11 @@
+<h2 align="center">자유게시판</h2>
+<% @post_show.each do |t| %>
+    <a href="/posts/show/<%= t.id %>">
+        <%= t.title %> /
+        <%= t.content %>
+    </a>
+    <a href="/posts/edit/<%= t.id %>">[글 수정]</a>
+    <a style="color: red" href="/posts/destroy/<%= t.id %>">[삭제하기]</a>
+    <hr/>
+<% end %>
+<div align="right"><a href="/posts/new">[글 쓰기]</a></div>
