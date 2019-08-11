@@ -17,7 +17,8 @@
 
 ## 3. AWS Cloud9으로 프로젝트 가져가기
 
-    git clone https://github.com/kbs4674/crud_debugging
+    git clone https://github.com/kcm4674/crud_debugging
     cd crud_debugging
     gem install rails --version=5.2.3
+    bundle install
     rails s
